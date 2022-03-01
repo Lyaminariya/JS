@@ -35,11 +35,11 @@ const personalMovieDB = {
 
 const oneOfWatchedFilms = prompt("Один из последних просмотренных фильмов?", ""),
     rateOfThisFilm = +prompt("На сколько оцените его?", ""),
-    anotherOfWatchedFilms = prompt("Другой из последних просмотренных фильмов?", ""),
-    rateOfAnotherFilm = +prompt("На сколько оцените его?", "");
+    anotherWatchedFilm = prompt("Другой из последних просмотренных фильмов?", ""),
+    rateAnotherFilm = +prompt("На сколько оцените его?", "");
 
 personalMovieDB.movies[oneOfWatchedFilms] = rateOfThisFilm;
-personalMovieDB.movies[anotherOfWatchedFilms] = rateOfAnotherFilm;
+personalMovieDB.movies[anotherWatchedFilm] = rateAnotherFilm;
 
 console.log(personalMovieDB);
 
